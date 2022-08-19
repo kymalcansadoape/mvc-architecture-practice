@@ -7,7 +7,6 @@ class QueryBuilder{
         $this->pdo = $pdo;
     }
 
-
     function selectAll($tableName){
         $statement = $this->pdo->prepare("SELECT * FROM {$tableName}");
     
