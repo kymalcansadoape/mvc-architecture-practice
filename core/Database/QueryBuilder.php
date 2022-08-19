@@ -9,9 +9,7 @@ class QueryBuilder{
 
     function selectAll($tableName){
         $statement = $this->pdo->prepare("SELECT * FROM {$tableName}");
-    
         $statement->execute();
-        
         return $statement->fetchAll(PDO::FETCH_CLASS);
     }
     public function insert($table, $param){

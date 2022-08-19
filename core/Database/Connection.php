@@ -7,7 +7,8 @@ class Connection{
         try {
             // ! CONNECTION STRING
             return new PDO(
-                $config['CONNECTION'].';dbname='.$config['DB_NAME'],
+                $config['CONNECTION'].';dbname='.
+                $config['DB_NAME'],
                 $config['USERNAME'],
                 $config['PASSWORD'],
                 $config['OPTION']

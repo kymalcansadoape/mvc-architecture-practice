@@ -7,7 +7,7 @@ class Router{
         'POST' => [],
     ];
     public static function load($file){
-        $router = new static;
+        $router = new Router;
         require $file;
         return $router;
     }
